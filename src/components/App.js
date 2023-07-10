@@ -4,10 +4,10 @@ import './../styles/App.css';
 
 const App = () => {
   const [data, setData] = useState('');
-  // Add event listener for input change
+
   function handleDataChange(event) {
-    let ans = "Hello " + event.target.value + "!";
-    setData(ans);
+    
+    setData(`hello ${ans}!`);
   }
 
   return (
