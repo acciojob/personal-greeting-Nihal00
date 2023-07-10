@@ -6,7 +6,7 @@ const App = () => {
   const [data, setData] = useState('');
 
   function handleDataChange(event) {
-    
+    let ans = event.target.value;
     setData(`hello ${ans}!`);
   }
 
