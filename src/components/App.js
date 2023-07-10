@@ -6,7 +6,8 @@ const App = () => {
   const [data, setData] = useState('');
   // Add event listener for input change
   function handleDataChange(event) {
-    setData(event.target.value);
+    let ans = "Hello " + event.target.value + "!";
+    setData(ans);
   }
 
   return (
@@ -14,7 +15,7 @@ const App = () => {
         {/* Do not remove the main div */}
         <p>Enter your name:</p>
         <input onInput={handleDataChange}/>
-        <p>Hello {data}!</p>
+        <p>{data}</p>
     </div>
   )
 }
