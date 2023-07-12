@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div>
-        <p>Enter your name:</p>
+        Enter your name:
         <input onInput={(e) => setData(e.target.value)}/>
         <p>Hello {data}!</p>
     </div>
